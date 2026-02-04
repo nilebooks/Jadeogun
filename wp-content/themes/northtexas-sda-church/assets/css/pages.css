@@ -1,0 +1,637 @@
+/*
+* North Texas SDA Church - Pages Stylesheet
+* Author: Augment Agent
+* Version: 1.0
+*/
+
+/* Common Page Styles */
+.page-header {
+    height: 100vh;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.page-header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.page-title {
+    font-size: 150px;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.page-subtitle {
+    font-size: 24px;
+    max-width: 800px;
+    font-family: 'Barlow', serif;
+}
+
+/* About Page Styles */
+.about-content-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.about-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about-content-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-content-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-content-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.about-content-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+    font-family: 'Lora', serif;
+}
+
+.about-content-image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sermon Page Styles */
+.sermons-page {
+    background-color: #fff;
+}
+
+.sermons-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.sermons-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sermons-label {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sermons-title {
+    font-size: 80px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(to right, #222 0%, #8B4513 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.sermons-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sermons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.sermon-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sermon-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sermon-thumbnail {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.sermon-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sermon-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(249, 92, 40, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sermon-play-button:hover {
+    background-color: #F95C28;
+}
+
+.sermon-details {
+    padding: 20px;
+}
+
+.sermon-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sermon-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.sermon-speaker {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.sermon-speaker-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: #F95C28;
+}
+
+.sermon-speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sermon-speaker-name {
+    font-size: 14px;
+    color: #666;
+}
+
+.sermon-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sermon-category {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    color: #666;
+}
+
+.sermon-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.sermon-action-button {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.sermon-action-button i {
+    margin-right: 5px;
+}
+
+.contact-info-section{
+    padding-top: 30px;
+}
+
+/* Events Page Styles */
+.events-page {
+    background-color: #fff;
+}
+
+.events-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+/* Prayer Request Page Styles */
+.prayer-request-page {
+    background-color: #fff;
+}
+
+.prayer-request-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.prayer-request-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.prayer-request-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.prayer-request-form-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.prayer-request-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #F95C28;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(249, 92, 40, 0.2);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+}
+
+.form-submit {
+    margin-top: 30px;
+}
+
+.form-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+.prayer-contact-info {
+    margin-top: 30px;
+}
+
+.prayer-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.prayer-contact-item i {
+    font-size: 20px;
+    color: #F95C28;
+    margin-right: 15px;
+}
+
+.scripture-section {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.scripture-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scripture-quote {
+    position: relative;
+    padding: 30px;
+}
+
+.scripture-quote i {
+    font-size: 40px;
+    color: #F95C28;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.scripture-quote blockquote {
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: #333;
+    margin: 0 0 20px;
+}
+
+.scripture-quote cite {
+    font-style: normal;
+    font-weight: 600;
+    color: #555;
+}
+
+.events-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.events-label {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.events-title {
+    font-size: 80px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(to right, #222 0%, #8B4513 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.events-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-date-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #F95C28;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.event-details {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.event-time, .event-location {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.event-time i, .event-location i {
+    margin-right: 5px;
+    color: #F95C28;
+}
+
+.event-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.event-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.event-category {
+    font-size: 14px;
+    color: #F95C28;
+    font-weight: 600;
+}
+
+.event-button {
+    display: inline-flex;
+    align-items: center;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.event-button svg {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.event-button:hover {
+    color: #F95C28;
+}
+
+.event-button:hover svg {
+    transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 60px;
+        line-height: 1;
+    }
+
+    .page-header{
+        height: 60vh;
+    }
+
+    .page-subtitle {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .about-content-container,
+    .service-times-container {
+        flex-direction: column;
+    }
+
+    .sermons-title,
+    .events-title {
+        font-size: 60px;
+    }
+
+    .sermons-container,
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+}

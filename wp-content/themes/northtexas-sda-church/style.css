@@ -1,0 +1,15 @@
+/*
+Theme Name: North Texas SDA Church
+Theme URI: https://northtexassdachurch.com
+Author: Advent Tech (WordPress conversion)
+Author URI: https://adventtech.ca/
+Description: WordPress theme conversion of the North Texas SDA Church site.
+Version: 1.0.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ntxsda
+*/
+
+body {
+	margin: 0;
+}
